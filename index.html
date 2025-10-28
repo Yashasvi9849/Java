@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Beagle Claims Uploader</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Background Image Section -->
+    <div class="background">
+      <img id="bg-image" src="beagle.jpg" alt="Beagle Background">
+    </div>
+
+    <!-- Upload Form Section -->
+    <div class="upload-box">
+      <h1>Upload Your PDF</h1>
+      <p>Submit your claim document and details below</p>
+
+      <form id="upload-form">
+        <div class="form-group">
+          <label for="pdf">Upload PDF:</label>
+          <input type="file" id="pdf" accept=".pdf">
+        </div>
+
+        <div class="form-group">
+          <label for="max-benefit">Max Benefit Requested ($):</label>
+          <input type="number" id="max-benefit" placeholder="e.g. 1500">
+        </div>
+
+        <div class="form-group">
+          <label for="termination">Termination Type:</label>
+          <select id="termination">
+            <option value="">Select type</option>
+            <option value="eviction">Eviction</option>
+            <option value="move-out">Move Out</option>
+          </select>
+        </div>
+
+        <!-- Flexible placeholder for future inputs -->
+        <div class="form-group flexible">
+          <label for="extra">Additional Requirements:</label>
+          <input type="text" id="extra" placeholder="Add more details...">
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
